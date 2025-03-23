@@ -1,0 +1,14 @@
+Flask
+sounddevice
+numpy
+librosa
+mido
+python-rtmidi
+music21
+tensorflow
+requests
+wave
+flask-cors
+pygame
+music21
+soundfile

@@ -1,0 +1,91 @@
+body {
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+    background: linear-gradient(135deg, #1E1E2E, #3A3D5A);
+    color: white;
+    padding: 50px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    max-width: 400px;
+    background: rgba(0, 0, 0, 0.3);
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 15px rgba(255, 255, 255, 0.2);
+}
+
+.app-title {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+/* Record Button */
+.record-btn-container {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.record-btn {
+    width: 100px;
+    height: 100px;
+    background: radial-gradient(circle, #ff79c6, #ff4486);
+    color: white;
+    font-size: 18px;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    outline: none;
+    box-shadow: 0px 0px 15px rgba(255, 121, 198, 0.7);
+    transition: transform 0.2s, box-shadow 0.3s;
+}
+
+.record-btn:hover {
+    transform: scale(1.1);
+    box-shadow: 0px 0px 25px rgba(255, 121, 198, 1);
+}
+
+/* Song Details */
+#song-details {
+    margin-top: 20px;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.hidden {
+    display: none;
+}
+
+/* Controls */
+.controls {
+    margin-top: 20px;
+}
+
+button {
+    background-color: #03DAC6;
+    color: white;
+    border: none;
+    padding: 15px;
+    font-size: 16px;
+    margin: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:disabled {
+    background-color: gray;
+    cursor: not-allowed;
+}
+
+/* Footer */
+footer {
+    margin-top: 30px;
+    font-size: 14px;
+    color: #B0B0B0;
+}

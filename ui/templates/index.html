@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HarmonyBot</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1 class="app-title">HarmonyBot 🎵</h1>
+
+        <!-- Circular Record Button -->
+        <div class="record-btn-container">
+            <button id="recordBtn" class="record-btn">
+                🎤 Tap to Listen
+            </button>
+        </div>
+
+        <p id="status">Tap to analyze audio...</p>
+
+        <!-- Song Details Section -->
+        <div id="song-details" class="hidden">
+            <h2>Detected Music</h2>
+            <p><strong>Tempo:</strong> <span id="tempo"></span> BPM</p>
+            <p><strong>Key:</strong> <span id="key"></span></p>
+        </div>
+
+        <!-- Generate & Stop Buttons -->
+        <div class="controls">
+            <button id="generateBtn" disabled>🎶 Generate Music</button>
+            <button id="stopBtn" disabled>⏹️ Stop Playback</button>
+        </div>
+    </div>
+
+    <footer>
+        <p>Powered by HarmonyBot AI</p>
+    </footer>
+
+    <script src="{{ url_for('static', filename='scripts/app.js') }}"></script>
+</body>
+</html>
